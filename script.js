@@ -1,8 +1,12 @@
 function threeSum(arr, target) {
-	let min = Number.MAX_VALUE;
-	for(let i=0;i<arr.length-3;i++){
+	let min = 0;
+	
+	for(let i=0;i<arr.length-2;i++){
 		let sum = arr[i] + arr[i+1] + arr[i+2];
-		if((sum-target) <= min){
+		if(arr.length == 3){
+			return sum;
+		}
+		if((sum-target) < min){
 			min = sum;
 		}
 	}
