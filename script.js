@@ -6,7 +6,7 @@ function threeSum(arr, target) {
 		if(arr.length == 3){
 			return sum;
 		}
-		if((sum-target) < min){
+		if(Math.abs(sum-target) < min){
 			min = sum-target;
 			s = sum;
 		}
