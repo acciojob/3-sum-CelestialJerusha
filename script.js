@@ -11,7 +11,7 @@ function threeSum(arr, target) {
 			s = sum;
 		}
 	}
-	return min;
+	return s;
   //your code here
 }
 
